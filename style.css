@@ -1,1 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round@display=swap");
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+h1,
+h2{
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  color: darkblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+}
+
+
 
