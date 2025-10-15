@@ -100,5 +100,57 @@ footer {
   font-size: 18px;
 }
 
+.title-con{
+  display: flex;
+  justify-content: center;
+}
 
+.gallery-title{
+  font-size: 40px;
+  margin-top: 30px;
+}
 
+.gallery-con{
+  width: 100%
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  border: deepskyblue 2px solid;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.image{
+  margin: 10px;
+  border-raduis: 10px;
+}
+@media (max-width: 800px) {
+  .links-con{
+    width: 350px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .links{
+    font-size: 15px;
+  }
+
+  .vid-con{
+    width: 500px;
+    height: 300px;
+  }
+
+  iframe{
+    width: 500px;
+    height: 300px
+  }
+}
