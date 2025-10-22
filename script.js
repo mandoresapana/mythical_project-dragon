@@ -91,7 +91,7 @@ function shuffleCard() {
     card.addEventListener("click", flipCard);
 
     let imgTag = card.querySelector("img");
-    imgTag.src = `asset/unicorn${arr[index]}.jpg`;
+    imgTag.src = `asset/dragon${arr[index]}.jpg`;
   });
   scoreNUM = 0;
   highScore.innerHTML ="High Score: " + window.localStorage.getItem("highscoreLocal");
