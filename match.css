@@ -58,3 +58,64 @@
   flex-wrap: wrap;
   justify-content:space-between;
 }
+
+.card .back-face .match-img{
+  max-width: 180px;
+}
+
+.card .back-face{
+  transform: rotateY(-180deg);
+}
+
+.card.flip .back-face{
+  transform: rotateY(0);
+}
+
+.card.flip .front-face{
+  transform: rotateY(180deg);
+}
+
+.match-img{
+  border-radius: 25px 0;
+  width: 200px;
+  height: 250px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.616);
+  position: absolute;
+  transition: transform .25s linear;
+  backface-visibility: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card.shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake{
+  0%, 100%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-13px);
+  }
+  40%{
+    transform: translateX(13px);
+  }
+  60%{
+    transform: translateX(-8px);
+  }
+  80%{
+    transform: translateX(8px);
+  }
+}
+
+@media (media-width: 800px){
+  .container{
+    width: 600px;
+    height: 500px;
+  }
+  .match-img{
+    width: 130px;
+    height: 110px;
+  }
+}
